@@ -6,4 +6,4 @@ def gcd(a, b):
 a = int(input("Enter first number: "))
 b = int(input("Enter second number: "))
 sol = gcd(a, b)
-print("GCD is:", output)
+print("GCD is:", sol)
