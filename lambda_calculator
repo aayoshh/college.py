@@ -1,0 +1,17 @@
+add = lambda x, y: x + y
+subtract = lambda x, y: x - y
+multiply = lambda x, y: x * y
+divide = lambda x, y: x / y if y != 0 else "Error: Division by zero"
+
+operations = {'+': add, '-': subtract, '*': multiply, '/': divide}
+
+def calculator():
+    while True:
+        operation = input("Enter operation (+, -, *, /): ")
+        num1 = float(input("Enter first number: "))
+        num2 = float(input("Enter second number: "))
+        
+        result = operations[operation](num1, num2)
+        print("Result:", result)
+
+calculator()
